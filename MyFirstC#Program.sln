@@ -1,25 +1,49 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstC#Program", "MyFirstC#Program\MyFirstC#Program.csproj", "{4E017014-3B24-4F39-AAB4-AD54AEF528FE}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4E017014-3B24-4F39-AAB4-AD54AEF528FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E017014-3B24-4F39-AAB4-AD54AEF528FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E017014-3B24-4F39-AAB4-AD54AEF528FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E017014-3B24-4F39-AAB4-AD54AEF528FE}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E736E055-9065-4FED-A3E5-5B5A9B1C8AEC}
-	EndGlobalSection
-EndGlobal
+using System;
+
+class program
+{
+    static void Main(String[] args)
+    {
+        int score = 0;
+        Console.WriteLine("Welcome to the quiz!");
+        Console.WriteLine("\n1. What is the Capital of france?");
+        Console.WriteLine("A. Madrid");
+        Console.WriteLine("B. Paris");
+        Console.WriteLine("C. Berlin");
+        Console.WriteLine("D. Rome");
+        Console.WriteLine("Your Answer:");
+
+        String answer1 = Console.ReadLine();
+
+        if (answer1 == "B" || answer1 == "b")
+        {
+            Console.WriteLine("Correct!");
+            score++;
+        }
+        else {
+            Console.WriteLine("Wrong. The correct answer is B.");
+        }
+
+        Console.WriteLine("\n2. What is 5 + 3?");
+        Console.WriteLine("A. 6");
+        Console.WriteLine("B. 7");
+        Console.WriteLine("C. 8");
+        Console.WriteLine("D. 9");
+        Console.WriteLine("Your answer:");
+
+        String answer2 = Console.ReadLine();
+        if(answer2 == "C" || answer2 == "c")
+        {
+            Console.WriteLine("Correct!");
+            score++;
+        }
+        else { 
+
+    Console.WriteLine("Wrong. The correct answer is C.");
+        }
+Console.WriteLine($"\nYou scored {score} out of 2!");
+    }
+}
+
+   
+
